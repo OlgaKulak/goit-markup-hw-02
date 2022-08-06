@@ -1,217 +1,235 @@
 :root {
-  --main-color: #212121;
-  --secondary-text-color: #757575;
-  --accent-color: #2196f3;
-  --background-color: #f5f5f5;
-  --secondary-background-color: #2f303a;
-  --additional-background-color: #f5f4fa;
-  --primary-white-color: #ffffff;
+    --main-color: #212121;
+    --secondary-text-color: #757575;
+    --accent-color: #2196f3;
+    --background-color: #f5f5f5;
+    --secondary-background-color: #2f303a;
+    --additional-background-color: #f5f4fa;
+    --primary-white-color: #ffffff;
+    --button-pressing-color: #188ce8;
 }
 
 body {
-  background-color: var(--background-color);
-  color: var(--main-color);
-  font-family: Roboto, sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.71;
+    background-color: var(--background-color);
+    color: var(--main-color);
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 ul {
-  list-style: none;
+    list-style: none;
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
-p {
-  color: var(--secondary-text-color);
-  font-weight: 400;
-}
 /* Logo */
 
 .logo {
-  color: #000000;
-  font-family: Raleway, sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-}
-
-.logo:hover,
-.logo:focus {
-  color: var(--accent-color);
+    color: #000000;
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
 }
 
 .logo-zone {
-  color: var(--accent-color);
+    color: var(--accent-color);
 }
 
 /* site nav */
 .site-nav .link.current {
-  color: var(--accent-color);
+    color: var(--accent-color);
 }
 
 .site-nav .link {
-  color: var(--main-color);
-  font-weight: 500;
-  line-height: 1.14;
+    color: var(--main-color);
+    font-weight: 500;
+    line-height: 1.14;
 }
+
 .site-nav .link:hover,
 .site-nav .link:focus {
-  color: var(--accent-color);
+    color: var(--accent-color);
 }
 
 .site-contacts .link {
-  color: var(--secondary-text-color);
-  font-weight: 500;
-  line-height: 1.14;
+    color: var(--secondary-text-color);
+    font-weight: 500;
+    line-height: 1.14;
 }
 
 .site-contacts .link:hover,
 .site-contacts .link:focus {
-  color: var(--accent-color);
+    color: var(--accent-color);
 }
 
 /* hero  */
 
 .hero {
-  background-color: var(--secondary-background-color);
+    background-color: var(--secondary-background-color);
 }
 
 .hero-title {
-  color: var(--primary-white-color);
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+    color: var(--primary-white-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
 
-  text-align: center;
-  text-transform: uppercase;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 /* button */
 .btn {
-  font-size: 16px;
-  border-radius: 4px;
-  border: none;
+    font-family: inherit;
+    font-size: 16px;
+    letter-spacing: 0.06em;
+    border-radius: 4px;
+    border: none;
 
-  cursor: pointer;
-  text-align: center;
+    cursor: pointer;
+    text-align: center;
 }
 
 .button.primary {
-  color: var(--primary-white-color);
-  background-color: var(--accent-color);
-  font-weight: 700;
-  line-height: 1.88;
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+    font-weight: 700;
+    line-height: 1.88;
 }
 
 .button.secondary {
-  background-color: #eeeeee;
-  font-weight: 500;
-  line-height: 1.62;
+    background-color: #eeeeee;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    line-height: 1.62;
 }
 
 .button.primary:hover,
 .button.primary:focus {
-  color: var(--primary-white-color);
-  background-color: #188ce8;
+    color: var(--primary-white-color);
+    background-color: var(--button-pressing-color);
 }
 
 .button.secondary:hover,
 .button.secondary:focus {
-  color: var(--primary-white-color);
-  background-color: var(--accent-color);
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
 }
 
 .section .title {
-  font-weight: 700;
-  line-height: 1.14;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
 
-  text-transform: uppercase;
+    text-transform: uppercase;
 }
+
 .section .text {
+    color: var(--secondary-text-color);
+    font-weight: 400;
 }
+
 /* work */
 
 .work-title,
 .team-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
 
-  text-align: center;
+    text-align: center;
 }
+
 /* team */
 .team {
     background-color: var(--additional-background-color);
 }
 .user-img {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
 
-  text-align: center;
+    text-align: center;
 }
 .job-title {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.19;
+    font-family: inherit;
+    color: var(--secondary-text-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
 
-  text-align: center;
+    text-align: center;
 }
+
 /* footer */
 
-.container {
-  background-color: var(--secondary-background-color);
-  color: var(--primary-white-color);
-  font-family: Roboto, sans-serif;
-  font-style: normal;
+.footer {
+    background-color: var(--secondary-background-color); 
 }
 
-.container .logo {
-  color: var(--primary-white-color);
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+.footer .logo {
+    color: var(--primary-white-color);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
 }
 
-.container .logo-zone {
-  color: var(--accent-color);
+.footer .logo-zone {
+    color: var(--accent-color);
 }
 
-.container .logo:hover,
+.footer .logo:hover,
 .container .logo:focus {
-  color: var(--accent-color);
+    color: var(--accent-color);
 }
 
-.container .link {
-  color: var(--primary-white-color);
-  font-style: normal;
-  font-weight: 400;
+.footer .link {
+    color: var(--primary-white-color);
+    font-style: normal;
+    font-weight: 400;
 }
 
-.container .link-contact {
-  color: rgba(255, 255, 255, 0.6);
-  font-style: normal;
-  font-weight: 400;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+.footer .link-contact {
+    color: rgba(255, 255, 255, 0.6);
+    font-style: normal;
+    font-weight: 400;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.container .link-contact:hover,
-.container .link-contact:focus {
-  color: var(--accent-color);
+.footer .link-contact:hover,
+.footer .link-contact:focus {
+    color: var(--accent-color);
 }
 
 .item .title {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
 }
 
 .item .content {
-  font-size: 16px;
-  line-height: 1.88;
+    font-family: inherit;
+    color: var(--secondary-text-color);
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
 }
