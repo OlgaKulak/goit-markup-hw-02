@@ -197,10 +197,6 @@ a {
     color: var(--accent-color);
 }
 
-.footer .logo:hover,
-.container .logo:focus {
-    color: var(--accent-color);
-}
 
 .footer .link {
     color: var(--primary-white-color);
